@@ -251,8 +251,6 @@ for k = 1:lMF(2)
     keep_bins_negative = mPD < negative_threshold; 
     keep_bins = keep_bins_positive | keep_bins_negative; 
     
-    keep_bins                       =...
-        PD_cts > ((max(PD_cts(:))/100)*factor);
     mPD_red                         =   mPD.*keep_bins;
 
     FName_PDMap                     =...
